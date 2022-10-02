@@ -7,7 +7,7 @@ import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
-    path: 'logtin', component: LoginComponent
+    path: 'login', component: LoginComponent
   },
   {
     path: '', component: NavComponent, children: [
