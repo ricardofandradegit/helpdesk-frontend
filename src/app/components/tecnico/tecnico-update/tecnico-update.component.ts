@@ -60,7 +60,7 @@ export class TecnicoUpdateComponent implements OnInit {
           if(ex.error.message != '') {
             this.toast.error(ex.error.message);
           } else {
-            this.toast.error('Problemas ao atualizar técnico, favor verificar informações de CPF.');
+            this.toast.error('Problemas ao atualizar técnico, favor verificar informações.');
           }
           
         }
