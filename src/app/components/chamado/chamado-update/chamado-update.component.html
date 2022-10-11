@@ -14,10 +14,10 @@
     </form>
     <div class="status-prioridade">
         <mat-form-field appearance="outline">
-            <mat-label>Selecione um status</mat-label>
+            <mat-label>STATUS ({{ retornaStatus(chamado.status) }})</mat-label>
             <mat-select 
-            [(ngModel)]="chamado.status"
-            name="status"
+                [(ngModel)]="chamado.status"
+                name="status"
                 [formControl]="status" required>
                 <mat-option value="0">ABERTO</mat-option>
                 <mat-option value="1">EM ANDAMENTO</mat-option>
@@ -25,7 +25,7 @@
             </mat-select>
         </mat-form-field>
         <mat-form-field appearance="outline">
-            <mat-label>Selecione uma prioridade</mat-label>
+            <mat-label>PRIORIDADE ({{ retornaPrioridade(chamado.prioridade) }})</mat-label>
             <mat-select 
                 [(ngModel)]="chamado.prioridade"
                 name="prioridade"
@@ -39,7 +39,7 @@
 
     <div class="tecnico">
         <mat-form-field class="full-width" appearance="outline">
-            <mat-label>Selecione um técnico</mat-label>
+            <mat-label>TÉCNICO ({{ chamado.nomeTecnico }})</mat-label>
             <mat-select 
                 [(ngModel)]="chamado.tecnico"
                 name="tecnico"
@@ -50,7 +50,7 @@
     </div>
     <div class="cliente">
         <mat-form-field class="full-width" appearance="outline">
-            <mat-label>Selecione um Cliente</mat-label>
+            <mat-label>CLIENTE ({{ chamado.nomeCliente }})</mat-label>
             <mat-select 
                 [(ngModel)]="chamado.cliente"
                 name="cliente"
