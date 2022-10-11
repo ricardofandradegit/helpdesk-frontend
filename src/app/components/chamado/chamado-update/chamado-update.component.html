@@ -65,7 +65,7 @@
             <textarea  
                 [(ngModel)]="chamado.observacoes"
                 name="observacoes"
-                [formControl]="observacoes" required class="descricao" matInput placeholder="Ex. trocar bateria de notebook queimada..."></textarea>
+                [formControl]="observacoes" required class="observacoes" matInput placeholder="Ex. trocar bateria de notebook queimada..."></textarea>
         </mat-form-field>
     </form>
     <button (click)="create()" [disabled]="!validaCampos()" class="full-width mat-elevation-z4" mat-raised-button color="primary">Atualizar</button>
