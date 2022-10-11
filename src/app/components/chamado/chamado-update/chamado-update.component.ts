@@ -48,9 +48,9 @@ export class ChamadoUpdateComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.chamado.id = this.route.snapshot.paramMap.get('id');
     this.findAllClientes();
     this.findAllTecnicos();
-    this.chamado.id = this.route.snapshot.paramMap.get('id');
     this.findById();
   }
 
@@ -60,8 +60,8 @@ export class ChamadoUpdateComponent implements OnInit {
     });
   }
 
-  create(): void {
-    this.chamadoService.create(this.chamado).subscribe(resposta => {
+  update(): void {
+    this.chamadoService.update(this.chamado).subscribe(resposta => {
       this.toastService.success('Chamado atualizado com sucesso', 'Atualização de chamado');
       this.router.navigate(['chamados']);
     }, ex => {
