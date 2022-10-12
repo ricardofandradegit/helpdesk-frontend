@@ -10,7 +10,7 @@
     width: 30rem;
     margin: auto;
     background-color: rgb(235, 235, 235);
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
     border-radius: 1rem;
 }
 
@@ -26,7 +26,7 @@ img {
 }
 
 button {
-    margin-top: 1.5rem;
+    margin-top: .5rem;
 }
 
 .full-width {
@@ -34,7 +34,7 @@ button {
 }
 
 p {
-    margin-top: 1rem;
+    margin-top: .5rem;
     opacity: .5;
     text-align: center;
 }

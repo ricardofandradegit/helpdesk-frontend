@@ -55,7 +55,7 @@ export class TecnicoDeleteComponent implements OnInit {
           if(ex.error.message != '') {
             this.toast.error(ex.error.message);
           } else {
-            this.toast.error('Problemas ao atualizar técnico, favor verificar informações.');
+            this.toast.error('Você não tem autorização para excluir o técnico.');
           }
           
         }

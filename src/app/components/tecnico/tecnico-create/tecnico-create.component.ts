@@ -48,7 +48,7 @@ senha: FormControl = new  FormControl(null, Validators.minLength(3));
         if(ex.error.message != '') {
           this.toast.error(ex.error.message);
         } else {
-          this.toast.error('Problemas ao incluir técnico, favor verificar informações de CPF.');
+          this.toast.error('Você não tem autorização para incluir técnico.');
         }
         
       }
